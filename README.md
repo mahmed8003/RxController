@@ -42,6 +42,6 @@ maven { url "https://jitpack.io" }
 and:
 ```script
 dependencies {
-    compile 'com.github.mahmed8003:RxController:0.0.1'
+    compile 'com.github.mahmed8003:RxController:0.0.2'
 }
 ```
