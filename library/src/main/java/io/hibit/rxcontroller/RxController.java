@@ -31,11 +31,11 @@ public abstract class RxController extends Controller {
         this.addLifecycleListener(new RxControllerLifecycleHelper());
     }
 
-    protected final void dispose(Disposable disposable, ControllerEvent event) {
+    public final void dispose(Disposable disposable, ControllerEvent event) {
         addDisposable(disposable, event);
     }
 
-    protected final void dispose(Disposable disposable) {
+    public final void dispose(Disposable disposable) {
         final ControllerEvent lastEvent = this.lastEvent;
         ControllerEvent event = null;
         switch (lastEvent) {
